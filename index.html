@@ -1,0 +1,27 @@
+<script src="https://cdn.jsdelivr.net/vue/latest/vue.js"></script>
+
+
+<style>
+body {
+  background: black;
+  color:rgba(233, 133, 59,0.5);
+  font-size: 14pt;
+  line-height: 2em;
+}
+  span {
+    font-family: monospace;
+    font-size: 8pt;
+    color: rgba(99, 217, 43,0.5);
+  }
+  #app {
+    padding:2%;
+  }
+
+</style>
+
+<div id="app">
+  <span>{{ seq }} : {{ elapsed/1000 }}s : {{parseInt(elapsed/endClock*100,10)}}%</span>
+  <pre>{{{ subtitle.subtitle }}}</pre>
+</div>
+
+<script src="index.js"></script>
